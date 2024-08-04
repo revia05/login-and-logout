@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:black;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+            border-radius: 10px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        p {
+    
+    margin: 20px 0 30px;
+    text-align: center;
+}
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group input:focus {
+            border-color: #0066cc;
+        }
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: #0066cc;
+            border: none;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #004999;
+        }
+        .overlay-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #0066cc;
+            border: none;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .overlay-container button:hover {
+            background-color: #004999;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-group sign-up-container">
+            <form action="register.hbs" method="post">
+                <h1>Create Account</h1>
+                <input type="text" name="name" placeholder="Name" required/>
+                <br>
+                <br>
+                <input type="email" name="email" placeholder="Email" required/>
+                <br>
+                <br>
+                <input type="password" name="password" placeholder="Password" required/>
+                <br>
+                <br>
+                <input type="password" name="confirmpassword" placeholder="Confirm Password" required/>
+                <br>
+                <br>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <a href="login.hbs"><button class="ghost">Sign In</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
